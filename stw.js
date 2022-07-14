@@ -12,8 +12,7 @@ setZero : 0,
 		btn.onclick = ct.inc;
 		btnDec.onclick = ct.decrs;
 	},
-
-	//increasing count
+	
 	inc : () => {
 		ct.timer = setInterval(ct.tickInc, 1000);
 		btn.hidden = true;
@@ -24,7 +23,6 @@ setZero : 0,
 		btnRst.onclick = ct.reset;
 	},
 
-	//decreasing count
 	decrs : () => {
 		ct.timer = setInterval(ct.tickDecrs, 1000);
 		btnDec.hidden = true;
@@ -34,7 +32,8 @@ setZero : 0,
 		btnStp.onclick = ct.stop;
 		btnRst.onclick = ct.reset;
 	},
-
+	
+	//increasing count
 	tickInc : () => {
 		ctnue = ct.setZero;
 		ct.setZero++;
@@ -45,6 +44,7 @@ setZero : 0,
 		show.appendChild(create);
 	},
 
+	//decreasing count
 	tickDecrs : () => {
 		ctnue = ct.setZero;
 		ct.setZero--;
