@@ -1,14 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-	<meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
-	<title>StopWatch</title>
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<title>count</title>
 </head>
-
 <body>
-	<input type="button" id="btn" value="Ascending count"/>
-	<input type="button" id="btnDec" value="Decreasing count"/>
-	<input type="button" id="btnStp" value="Stop" hidden/>
-	<div id="demo"></div>
+	<div id="wrapper">
+		<div id="btnCtnr">
+			<button id="btn">increase</button>
+			<button id="btnDec">decrease</button>
+			<button id="btnStp" hidden>stop</button>
+			<button id="btnRst" hidden>reset</button>
+		</div>
+		<div id="myCt"></dv>
+	</div>
 </body>
-	<script src="stw.js"></script>
+<script src="stw.js"></script>
 </html>
